@@ -1,0 +1,13 @@
+     
+body {
+   
+    margin: 47px;
+    background: #84fab0;
+    
+  
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+  
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+  
+}

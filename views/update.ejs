@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <title>Update</title>
+  </head>
+  <body>
+    <style>
+      body{
+    background-color: rgb(171, 197, 197);
+    padding-top: 70px;
+    }
+    .row{
+    margin: 37px
+      }
+    </style>
+    <section >
+      <div class="container mt-5  ">
+        <form class="text-center" method="post" action="/user/update/data/<%=account._id %> ">
+          <div class="form-group row justify-content-center" >
+            <label for="website" class="col-sm-1 col-form-label">Website</label>
+            <div class="col-md-6 cen">
+              <input type="text" name="website" class="form-control" id="website" value="<%=account.website%>" placeholder="Website">
+            </div>
+          </div>
+          <div class="form-group row justify-content-center">
+            <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
+            <div class="col-md-6 justify-content-center">
+              <input type="email" name="email" class="form-control" value="<%=account.email%>" id="inputEmail3" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-center">
+            <label for="inputPassword3" class="col-sm-1 col-form-label">Password</label>
+            <div class="col-md-6">
+              <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+            </div>
+          </div>
+          
+          <div class="form-group row justify-content-center">
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-success btn-block">Update</button>
+            </div>
+          </form>
+            <div class="col-md-2">
+              <a href="/home">
+              <button   type="button" class="btn btn-danger btn-block">Cancel</button>
+            </a>
+            </div>
+          </div>
+
+       
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Kc7pOMq6zCsfv3n5+V3R+5N8vELkhbO4/60E3KRtx3HpP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y56Q7Zezs5ngTIvdek4f13+aKzaNM/4vbqKz4t+gkadfCss2l3bM7f" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
